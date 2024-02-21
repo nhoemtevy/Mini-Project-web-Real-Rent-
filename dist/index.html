@@ -14,13 +14,13 @@
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <a class="flex items-center">
                   <img src="/picture/logo.png" class="h-8 mr-3" alt="Logo">
-                  <span class="self-center text-3xl font-bold whitespace-nowrap text-blue-700">Real Rent</span>
+                  <span class="self-center text-3xl font-bold whitespace-nowrap text-blue-700 hidden md:block lg:block">Real Rent</span>
               </a>
             <div class="flex md:order-2">
               <div>
                 <button type="button" class="text-blue-700 bg-white border-blue-200 border-2 hover:border-blue-700 font-medium rounded-lg hover:text-primaryColor
                        text-sm px-4 py-2 text-center mr-3 md:mr-0">
-                    <a href="/dist/Register.html">Login</a>
+                    <a href="/dist/login.html">Login</a>
                 </button>
                 <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg 
                         text-sm px-4 py-2 text-center mr-3 md:mr-0 "><a href="/dist/Register.html">Register</a></button>
@@ -35,7 +35,7 @@
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
               <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-white bg-blue md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
                 <li>
-                  <a href="/dist/index.html" class="block py-2 pl-3 pr-4 text-primaryColor bg-blue-700 rounded md:bg-transparent md:hover:text-blue-800 md:p-0 m" aria-current="page">Home</a>
+                  <a href="/dist/index.html" class="block py-2 pl-3 pr-4 text-blue-700 bg-blue-700 rounded md:bg-transparent md:hover:text-blue-800 md:p-0 m" aria-current="page">Home</a>
                 </li>
                 <li>
                   <a href="/dist/rent.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0 ">Rent</a>
@@ -53,7 +53,7 @@
       <!-- Hero section -->
       <section>
             <div class="grid max-w-screen-xl p-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                    <div class="mr-auto place-self-center lg:col-span-7 z-30">
+                      <div class="mr-auto place-self-center lg:col-span-7 z-30">
                           <article
                           class="mt-8 text-[3.5rem] text-center lg:text-justify font-semibold md:text-[3rem] text-gray-600 ml-11 mb-8">
                           We have,
@@ -62,14 +62,13 @@
                           </span>
                         <p class="max-w-lg mt-6 text-[18px] text-gray-600 ml-4">Paper is a platform that allows publishers, bloggers and website owners to earn money by placing content. It is a trustworthy and credible platform that allows you to sell guest posts and sponsored content in a legitimate way. Website owners can add their websites on the platform and get paid for publishing content. Blog Management helps website owners monetize their blogs and websites by opening up a steady revenue stream.
                         </p>
-                        <button class="ml-4 rounded-md border border-blue-700 bg-blue-700 h-10 mx-auto items-center text-center text-white text-[18px] w-28">
+                        <button class="ml-4 rounded-md border border-blue-700 bg-blue-700 hover:bg-blue-800 h-10 mx-auto items-center text-center text-white text-[18px] w-28">
                           Explore
                         </button>
                     </div>
-                    <div class="hidden lg:col-span-5 lg:flex z-30 h-[400px] ml-32">
-                    <img src="/picture/download.png" alt="imagehero">
-                    </div>
-                                   
+                    <div class="hidden lg:block lg:col-span-5 z-10 ml-24 ">
+                      <img class="h-[400px]" src="/picture/download.png" alt="imagehero">
+                      </div>             
             </div>
       </section>
       

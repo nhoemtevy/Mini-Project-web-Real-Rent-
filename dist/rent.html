@@ -12,13 +12,13 @@
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a class="flex items-center">
                     <img src="/picture/logo.png" class="h-8 mr-3" alt="Logo">
-                    <span class="self-center text-3xl font-bold whitespace-nowrap text-blue-700">Real Rent</span>
+                    <span class="self-center text-3xl font-bold whitespace-nowrap text-blue-700 hidden md:block lg:block">Real Rent</span>
                 </a>
               <div class="flex md:order-2">
                 <div>
                   <button type="button" class="text-blue-700 bg-white border-blue-200 border-2 hover:border-blue-700 font-medium rounded-lg hover:text-primaryColor
                          text-sm px-4 py-2 text-center mr-3 md:mr-0">
-                      <a href="/dist/Register.html">Login</a>
+                      <a href="/dist/login.html">Login</a>
                   </button>
                   <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg 
                           text-sm px-4 py-2 text-center mr-3 md:mr-0 "><a href="/dist/Register.html">Register</a></button>
@@ -60,12 +60,12 @@
                       </span>
                     <p class="max-w-lg mt-6 text-[18px] text-gray-600 ml-4">A Home Away From Home Choose Your Perfect Stay.
                       Find Exactly What You Need — Find exactly what you need, anywhere in the world with free cancellation options..</p>
-                     <button class="ml-4 rounded-md border border-blue-700 bg-blue-700 h-10 mx-auto items-center text-center text-white text-[18px] w-28">
+                     <button class="ml-4 rounded-md border border-blue-700 bg-blue-700 hover:bg-blue-800 h-10 mx-auto items-center text-center text-white text-[18px] w-28">
                       View House
                     </button>
                 </div>
-                <div class="hidden lg:col-span-5 lg:flex z-30 h-[400px] ml-32">
-                <img src="/picture/download.png" alt="imagehero">
+                <div class="hidden lg:col-span-5 lg:flex z-30">
+                <img class="h-[300px]" src="/picture/download (1).png" alt="imagehero">
                 </div>     
         </div>
   </section>
@@ -84,6 +84,25 @@
                 </div>
             </div>
         </div>
+      </section>
+      <!-- End Section -->
+      <section class="bg-blue-100 flex items-center justify-center">
+        <div class=" h-56">
+          <h2
+            class="mt-16 mb-4 text-xl font-semibold text-blue-700">
+            Hello How Can We Help?
+          </h2>
+          <div class="relative w-full flex md:w-[320px] ">
+            <input type="email" id="currency-input"
+              class="flex p-2.5 w-full z-20 ps-10 text-sm placeholder:text-left placeholder:text-blue-700 text-blue-700  border border-white bg-white"
+              placeholder="ask a question">
+            <button
+              class="flex-shrink-0 z-10 inline-flex items-center px-4 text-md font-medium text-center text-white bg-blue-700 border border-white"
+              type="button">
+              Search
+            </button>
+          </div>
+      </div>
       </section>
     </main>
     <!-- Footer -->
