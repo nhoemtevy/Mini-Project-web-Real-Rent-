@@ -79,7 +79,7 @@ function displayProducts1(products1, containerSelector1, imageLink1) {
   `;
   });
 }
-let image1 = "/picture/";
+let image1 = "picture/";
 let products1 = [
   {
     title: "Looking for a real estate for rent in Phnom Penh?",
@@ -120,7 +120,7 @@ function displayProducts2(products2, containerSelector2, imageLink2) {
   });
 }
 
-let imageBaseLink2 = "/picture/";
+let imageBaseLink2 = "picture/";
 let products2 = [
   {
     price: 130,
