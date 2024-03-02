@@ -37,7 +37,7 @@ function displayProducts(products, containerSelector, imageLink) {
       `;
     });
   }
-  let image = "../picture/";
+  let image = "picture/";
   let products = [
     {
       title: "Looking for a real estate for rent in Phnom Penh?",
