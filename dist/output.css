@@ -575,33 +575,21 @@ h6 {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 640px;
+    max-width: 576px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .container {
-    max-width: 768px;
+    max-width: 960px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1440px;
   }
 }
 
@@ -822,10 +810,6 @@ h6 {
   max-width: 32rem;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -994,14 +978,14 @@ h6 {
   padding: 1.5rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .px-11 {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .px-14 {
@@ -1024,6 +1008,11 @@ h6 {
   padding-right: 1rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1039,6 +1028,11 @@ h6 {
   padding-bottom: 0.625rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1052,6 +1046,11 @@ h6 {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pb-4 {
@@ -1273,13 +1272,55 @@ h6 {
   }
 }
 
-@media (min-width: 640px) {
+@media not all and (min-width: 576px) {
+  .max-sm\:m-auto {
+    margin: auto;
+  }
+
+  .max-sm\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .max-sm\:block {
+    display: block;
+  }
+
+  .max-sm\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:m-auto {
+    margin: auto;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .sm\:ml-11 {
+    margin-left: 2.75rem;
+  }
+
+  .sm\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:max-w-md {
@@ -1307,13 +1348,21 @@ h6 {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .md\:order-1 {
     order: 1;
   }
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:m-auto {
+    margin: auto;
+  }
+
+  .md\:ml-11 {
+    margin-left: 2.75rem;
   }
 
   .md\:ml-14 {
@@ -1326,6 +1375,18 @@ h6 {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .md\:block {
@@ -1364,6 +1425,10 @@ h6 {
     flex-direction: row;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1393,6 +1458,14 @@ h6 {
     padding: 0px;
   }
 
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-start {
+    text-align: start;
+  }
+
   .md\:text-\[2rem\] {
     font-size: 2rem;
   }
@@ -1411,7 +1484,7 @@ h6 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -1420,17 +1493,45 @@ h6 {
     grid-column: span 7 / span 7;
   }
 
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
   .lg\:my-2 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .lg\:ml-11 {
+    margin-left: 2.75rem;
+  }
+
+  .lg\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
   }
 
   .lg\:block {
     display: block;
   }
 
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:inline {
+    display: inline;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
   }
 
   .lg\:grid-cols-12 {
@@ -1443,6 +1544,14 @@ h6 {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:gap-8 {
@@ -1472,10 +1581,12 @@ h6 {
   .lg\:text-justify {
     text-align: justify;
   }
-}
 
-@media (min-width: 1280px) {
-  .xl\:gap-0 {
-    gap: 0px;
+  .lg\:text-start {
+    text-align: start;
+  }
+
+  .lg\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
   }
 }
