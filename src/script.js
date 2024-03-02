@@ -38,7 +38,7 @@ function displayProducts(products, containerSelector, imageLink) {
     `;
   });
 }
-let image = "picture/";
+let image = "/picture/";
 let products = [
   {
     title: "Looking for a real estate for rent in Phnom Penh?",
@@ -79,7 +79,7 @@ function displayProducts1(products1, containerSelector1, imageLink1) {
   `;
   });
 }
-let image1 = "picture/";
+let image1 = "/picture/";
 let products1 = [
   {
     title: "Looking for a real estate for rent in Phnom Penh?",
@@ -104,7 +104,7 @@ function displayProducts2(products2, containerSelector2, imageLink2) {
   products2.forEach((product2) => {
     container3.innerHTML += `
         <div class="w-full p-6 flex flex-col border border-blue-200 rounded-md hover:scale-105">
-          <div class="bg-blue-700 "> 
+          <div class=" "> 
             <a href="">
               <img class="object-cover w-full h-64 md:h-56 sm:h-56" src="${imageLink2}${product2.thumbnail} ">
             </a>
@@ -120,7 +120,7 @@ function displayProducts2(products2, containerSelector2, imageLink2) {
   });
 }
 
-let imageBaseLink2 = "picture/";
+let imageBaseLink2 = "/picture/";
 let products2 = [
   {
     price: 130,
