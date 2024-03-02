@@ -4,9 +4,9 @@ function displayProducts(products, containerSelector, imageLink) {
   products.forEach((productspopular) => {
     container.innerHTML += `
           <div class="w-full p-6 flex flex-col border border-blue-200 rounded-md hover:scale-105">
-            <div class="bg-blue-700"> 
+            <div class=""> 
               <a href="">
-                <img class="bg-blue-700 h-64 w-96 md:h-56 sm:h-56" src="${imageLink}${productspopular.thumbnail} ">
+                <img class="object-cover h-64 w-full md:h-56 sm:h-56" src="${imageLink}${productspopular.thumbnail} ">
               </a>
             </div>
             <div class="pt-3 flex items-center justify-between py-4">
@@ -38,7 +38,7 @@ function displayProducts(products, containerSelector, imageLink) {
     `;
   });
 }
-let image = "/picture/";
+let image = "picture/";
 let products = [
   {
     title: "Looking for a real estate for rent in Phnom Penh?",
@@ -65,7 +65,7 @@ function displayProducts1(products1, containerSelector1, imageLink1) {
     <div class="w-full p-6 flex flex-col border border-blue-200 rounded-md hover:scale-105 ">
       <div class="bg-blue-700"> 
         <a href="">
-          <img class="bg-blue-700 h-64 w-96 md:h-56 sm:h-56" src="${imageLink1}${product1.thumbnail} ">
+          <img class="object-cover w-full h-64 md:h-56 sm:h-56" src="${imageLink1}${product1.thumbnail} ">
         </a>
       </div>
       <p class="font-medium py-4">${product1.title}</p>
@@ -79,7 +79,7 @@ function displayProducts1(products1, containerSelector1, imageLink1) {
   `;
   });
 }
-let image1 = "/picture/";
+let image1 = "picture/";
 let products1 = [
   {
     title: "Looking for a real estate for rent in Phnom Penh?",
@@ -106,7 +106,7 @@ function displayProducts2(products2, containerSelector2, imageLink2) {
         <div class="w-full p-6 flex flex-col border border-blue-200 rounded-md hover:scale-105">
           <div class="bg-blue-700 "> 
             <a href="">
-              <img class="bg-blue-700 h-64 w-96 md:h-56 sm:h-56" src="${imageLink2}${product2.thumbnail} ">
+              <img class="object-cover w-full h-64 md:h-56 sm:h-56" src="${imageLink2}${product2.thumbnail} ">
             </a>
           </div>
           <div class="pt-3 flex items-center justify-between">
@@ -120,7 +120,7 @@ function displayProducts2(products2, containerSelector2, imageLink2) {
   });
 }
 
-let imageBaseLink2 = "/picture/";
+let imageBaseLink2 = "picture/";
 let products2 = [
   {
     price: 130,

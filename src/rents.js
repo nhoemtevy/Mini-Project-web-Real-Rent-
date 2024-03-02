@@ -5,7 +5,7 @@ function displayProducts(products, containerSelector, imageLink) {
             <div class="w-full p-6 flex flex-col border border-blue-200 rounded-md hover:scale-105">
               <div class="bg-blue-700"> 
                 <a href="">
-                  <img class="bg-blue-700 h-64 w-96 md:h-56 sm:h-56" src="${imageLink}${productspopular.thumbnail} ">
+                  <img class="object-cover w-full h-64 md:h-56 sm:h-56" src="${imageLink}${productspopular.thumbnail} ">
                 </a>
               </div>
               <div class="pt-3 flex items-center justify-between py-4">
